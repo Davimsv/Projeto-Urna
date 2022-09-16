@@ -1,0 +1,245 @@
+@keyframes foco{
+    0%{opacity: 0.1;}
+    50%{opacity: 1;}
+    100%{opacity: 0.1;}
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.container{
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* Área da tela */
+
+.tela{
+    background: linear-gradient(to right,#f1f1f1, #fff);
+    width: 500px;
+    height: 360px;
+    border: 2px solid #dbd5c9;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.voto-area{
+    flex: 1;
+    display: flex;
+    padding: 10px;
+    }
+    
+.voto-area-info{
+    flex: 1;
+}
+
+.titulo-voto{
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.titulo-voto span{
+    text-transform: uppercase;
+    color: #403a3a;
+}
+
+.titulo-cargo{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-cargo h2{
+    margin: 0;
+}
+
+.titulo-numeros{
+    display: flex;
+    gap: 10px;
+}
+
+.caixa-numero{
+    height: 40px;
+    width: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+/* animação */ .foco{
+    animation: foco 1s infinite;
+}
+
+
+.voto-area-img{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.img-cargo{
+    width: 70%;
+    margin-bottom: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-cargo img{
+    width:100%;
+}
+
+.img-secundaria{
+    width: 50%;
+}
+
+.voto-rodape{
+    height: 40px;
+    border-top: 1px solid #000;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.voto-rodape h4{
+    font-weight: 400;
+    font-size: 13px;
+}
+
+
+
+/* Área do teclado */
+
+.teclado{
+    background-color: #403a3a;
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 10px #292828 inset;
+}
+
+.teclado .topo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e9dccc;
+    height: 80px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.teclado .topo img{
+    height: 50px;
+    margin: 10px;
+}
+
+.teclado .topo h1{
+    font-size: 15px;
+    color: #555;
+    text-transform: uppercase;
+    text-align: end;
+    margin-right: 10px;
+}
+
+.num{
+    margin-bottom: 25px;
+}
+
+.num,
+.config{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.config{
+    align-items: flex-end;
+}
+
+.numeros{
+    font-size: 25px;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px #555;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.numeros:last-child{
+    grid-column-start: 2;
+}
+
+.branco, .corrige, .confirma{
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 3px 3px #555;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.branco{
+    background-color: #fff;
+    color: #000;
+}
+.corrige{
+    background-color: #f09046;
+    color: #000;
+}
+
+.confirma{
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #48c079;
+    color: #000;
+}
+
+/* EXTRAS */
+
+.aviso-voto{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.fim-voto{
+    display: flex;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

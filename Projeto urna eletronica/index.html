@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrönica</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="tela">
+                <div class="voto-area">
+                    <div class="voto-area-info">
+                        <div class="titulo-voto">
+                            <span>Seu voto para</span>
+                        </div>
+                        <div class="titulo-cargo">
+                            <h2>Vereador</h2>
+                        </div>
+                        <div class="titulo-numeros">
+                            <div class="caixa-numero foco"></div>
+                            <div class="caixa-numero"></div>
+                        </div>
+                        <div class="candidato-area">
+                            <div class="titulo-nome">
+                                <h3>Nome: candidato escolhido</h3>
+                            </div>
+                            <div class="titulo-partido">
+                                <h4>Partido: partido do candidato</h4>
+                            </div>
+                            <div class="titulo-suplente">
+                                Suplente: suplente do candidato
+                            </div>
+                        </div>
+
+                    </div>
+                  
+                    <div class="voto-area-img">
+                        <div class="img-cargo">
+                            <img src="/img/84.jpg" alt="">
+                            <span>Cargo</span>
+                        </div>
+                        <div class="img-cargo img-secundaria">
+                            <img src="/img/84-2.jpg" alt="">
+                            <span>Cargo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="voto-rodape">
+                    <h4>Aperte a tecla: <br>
+                        CONFIRMA para CONFIRMAR este voto. <br>
+                        CORRIGE para REINICIAR este voto.
+                    </h4>
+                </div>
+            </div>
+            <div class="teclado">
+                <div class="topo">
+                    <img src="https://brasao.org/wp-content/uploads/2018/09/brasao-brasil-preto-e-branco.png" alt="brasão brasil">
+                    <h1>simulador urna Eletrônica</h1>
+                </div>
+                <div class="num">
+                    <div class="numeros" onclick="clicou('1')">1</div>
+                    <div class="numeros" onclick="clicou('2')">2</div>
+                    <div class="numeros" onclick="clicou('3')">3</div>
+                    <div class="numeros" onclick="clicou('4')">4</div>
+                    <div class="numeros" onclick="clicou('5')">5</div>
+                    <div class="numeros" onclick="clicou('6')">6</div>
+                    <div class="numeros" onclick="clicou('7')">7</div>
+                    <div class="numeros" onclick="clicou('8')">8</div>
+                    <div class="numeros" onclick="clicou('9')">9</div>
+                    <div class="numeros" onclick="clicou('0')">0</div>
+                </div>
+                <div class="config">
+                    <div class="branco" onclick="branco()">Branco</div>
+                    <div class="corrige" onclick="corrige()">Corrige</div>
+                    <div class="confirma" onclick="confirma()">Confirma</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="/sript/etapas.js"></script>
+    <script src="/sript/script.js"></script>
+</body>
+</html>
